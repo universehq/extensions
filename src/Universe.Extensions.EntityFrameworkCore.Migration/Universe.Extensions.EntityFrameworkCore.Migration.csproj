@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageId>Universe.Extensions.EFCore.Migration</PackageId>
+    <PackageId>Universe.Extensions.EntityFrameworkCore.Migration</PackageId>
     <IsPackable>True</IsPackable>
     <Authors>Ryan Martin</Authors>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>

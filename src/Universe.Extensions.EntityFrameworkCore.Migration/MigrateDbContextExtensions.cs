@@ -9,7 +9,7 @@ using Microsoft.Extensions.Logging;
 namespace Universe.Extensions.EFCore.Migration;
 
 #if NET8_0
-internal static class MigrateDbContextExtensions
+public static class MigrateDbContextExtensions
 {
     private const string ActivitySourceName = "DbMigrations";
     private static readonly ActivitySource ActivitySource = new(ActivitySourceName);
