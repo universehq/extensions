@@ -6,7 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace Universe.Extensions.EFCore.Migration;
+namespace Universe.Extensions.EntityFrameworkCore.Migration;
 
 #if NET8_0
 public static class MigrateDbContextExtensions

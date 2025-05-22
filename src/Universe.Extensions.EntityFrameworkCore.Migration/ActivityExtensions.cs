@@ -1,6 +1,6 @@
 // Source from https://github.com/dotnet/eShop
 
-namespace Universe.Extensions.EFCore.Migration;
+namespace Universe.Extensions.EntityFrameworkCore.Migration;
 
 using System.Diagnostics;
 

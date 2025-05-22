@@ -2,7 +2,7 @@
 
 using Microsoft.EntityFrameworkCore;
 
-namespace Universe.Extensions.EFCore.Migration;
+namespace Universe.Extensions.EntityFrameworkCore.Migration;
 
 public interface IDbSeeder<in TContext>
     where TContext : DbContext
