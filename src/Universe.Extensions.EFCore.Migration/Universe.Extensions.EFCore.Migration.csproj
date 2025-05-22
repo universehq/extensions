@@ -5,6 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageId>Universe.Extensions.EFCore.Migration</PackageId>
     <IsPackable>True</IsPackable>
     <Authors>Ryan Martin</Authors>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
@@ -20,7 +21,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <None Include=".\README.md" Pack="true" PackagePath="\" />
+        <None Include="./README.md" Pack="true" PackagePath="\" />
     </ItemGroup>
 
 </Project>
