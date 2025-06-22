@@ -1,4 +1,4 @@
-// Source from https://github.com/dotnet/eShop
+// Source reference from https://github.com/dotnet/eShop/tree/release/8.0
 
 namespace Universe.Extensions.EntityFrameworkCore.Migration;
 

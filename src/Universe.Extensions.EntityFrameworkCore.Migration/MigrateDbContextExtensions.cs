@@ -1,6 +1,7 @@
-// Source from https://github.com/dotnet/eShop
+// Source reference from https://github.com/dotnet/eShop/tree/release/8.0
 
 using System.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -14,21 +15,41 @@ public static class MigrateDbContextExtensions
     private const string ActivitySourceName = "DbMigrations";
     private static readonly ActivitySource ActivitySource = new(ActivitySourceName);
 
-    public static IServiceCollection AddMigration<TContext>(this IServiceCollection services)
+    [RequiresUnreferencedCode(
+        "Entity Framework Core migrations may require unreferenced code for database providers and model building."
+    )]
+    [RequiresDynamicCode(
+        "Entity Framework Core may require dynamic code generation for database providers and query compilation."
+    )]
+    public static IServiceCollection AddMigration<
+        [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors)] TContext
+    >(this IServiceCollection services)
         where TContext : DbContext => services.AddMigration<TContext>((_, _) => Task.CompletedTask);
 
-    public static IServiceCollection AddMigration<TContext>(
-        this IServiceCollection services,
-        Func<TContext, IServiceProvider, Task> seeder
-    )
+    [RequiresUnreferencedCode(
+        "Entity Framework Core migrations may require unreferenced code for database providers and model building."
+    )]
+    [RequiresDynamicCode(
+        "Entity Framework Core may require dynamic code generation for database providers and query compilation."
+    )]
+    public static IServiceCollection AddMigration<
+        [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors)] TContext
+    >(this IServiceCollection services, Func<TContext, IServiceProvider, Task> seeder)
         where TContext : DbContext
     {
         return services.AddHostedService(sp => new MigrationHostedService<TContext>(sp, seeder));
     }
 
-    public static IServiceCollection AddMigration<TContext, TDbSeeder>(
-        this IServiceCollection services
-    )
+    [RequiresUnreferencedCode(
+        "Entity Framework Core migrations may require unreferenced code for database providers and model building."
+    )]
+    [RequiresDynamicCode(
+        "Entity Framework Core may require dynamic code generation for database providers and query compilation."
+    )]
+    public static IServiceCollection AddMigration<
+        [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors)] TContext,
+        [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors)] TDbSeeder
+    >(this IServiceCollection services)
         where TContext : DbContext
         where TDbSeeder : class, IDbSeeder<TContext>
     {
@@ -38,10 +59,15 @@ public static class MigrateDbContextExtensions
         );
     }
 
-    private static async Task MigrateDbContextAsync<TContext>(
-        this IServiceProvider services,
-        Func<TContext, IServiceProvider, Task> seeder
-    )
+    [RequiresUnreferencedCode(
+        "Entity Framework Core migrations may require unreferenced code for database providers and model building."
+    )]
+    [RequiresDynamicCode(
+        "Entity Framework Core may require dynamic code generation for database providers and query compilation."
+    )]
+    private static async Task MigrateDbContextAsync<
+        [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors)] TContext
+    >(this IServiceProvider services, Func<TContext, IServiceProvider, Task> seeder)
         where TContext : DbContext
     {
         using var scope = services.CreateScope();
@@ -80,11 +106,15 @@ public static class MigrateDbContextExtensions
         }
     }
 
-    private static async Task InvokeSeeder<TContext>(
-        Func<TContext, IServiceProvider, Task> seeder,
-        TContext context,
-        IServiceProvider services
-    )
+    [RequiresUnreferencedCode(
+        "Entity Framework Core migrations may require unreferenced code for database providers and model building."
+    )]
+    [RequiresDynamicCode(
+        "Entity Framework Core may require dynamic code generation for database providers and query compilation."
+    )]
+    private static async Task InvokeSeeder<
+        [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors)] TContext
+    >(Func<TContext, IServiceProvider, Task> seeder, TContext context, IServiceProvider services)
         where TContext : DbContext
     {
         using var activity = ActivitySource.StartActivity($"Migrating {typeof(TContext).Name}");
@@ -108,13 +138,34 @@ public static class MigrateDbContextExtensions
         }
     }
 
-    private class MigrationHostedService<TContext>(
-        IServiceProvider serviceProvider,
-        Func<TContext, IServiceProvider, Task> seeder
-    ) : BackgroundService
+    private class MigrationHostedService<
+        [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors)] TContext
+    >(IServiceProvider serviceProvider, Func<TContext, IServiceProvider, Task> seeder)
+        : BackgroundService
         where TContext : DbContext
     {
+        [UnconditionalSuppressMessage(
+            "Trimming",
+            "IL2026",
+            Justification = "This library warns consumers about trimming requirements"
+        )]
+        [UnconditionalSuppressMessage(
+            "AOT",
+            "IL3050",
+            Justification = "This library warns consumers about AOT requirements"
+        )]
         public override Task StartAsync(CancellationToken cancellationToken)
+        {
+            return ExecuteMigrationAsync();
+        }
+
+        [RequiresUnreferencedCode(
+            "Entity Framework Core migrations may require unreferenced code for database providers and model building."
+        )]
+        [RequiresDynamicCode(
+            "Entity Framework Core may require dynamic code generation for database providers and query compilation."
+        )]
+        private Task ExecuteMigrationAsync()
         {
             return serviceProvider.MigrateDbContextAsync(seeder);
         }
