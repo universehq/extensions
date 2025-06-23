@@ -10,7 +10,7 @@ internal static class ActivityExtensions
     {
         activity.AddTag("exception.message", ex.Message);
         activity.AddTag("exception.stacktrace", ex.ToString());
-        activity.AddTag("exception.type", ex.GetType().FullName);
+        activity.AddTag("exception.type", ex.GetType().FullName ?? ex.GetType().Name);
         activity.SetStatus(ActivityStatusCode.Error);
     }
 }
