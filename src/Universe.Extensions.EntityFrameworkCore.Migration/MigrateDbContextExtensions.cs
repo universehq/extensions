@@ -123,11 +123,7 @@ public static class MigrateDbContextExtensions
         {
             var env = services.GetRequiredService<IHostEnvironment>();
 
-            if (!env.IsDevelopment())
-            {
-                await context.Database.MigrateAsync();
-            }
-
+            await context.Database.MigrateAsync();
             await seeder(context, services);
         }
         catch (Exception ex)
