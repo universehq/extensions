@@ -9,7 +9,6 @@ using Microsoft.Extensions.Logging;
 
 namespace Universe.Extensions.EntityFrameworkCore.Migration;
 
-#if NET8_0
 public static class MigrateDbContextExtensions
 {
     private const string ActivitySourceName = "DbMigrations";
@@ -172,4 +171,3 @@ public static class MigrateDbContextExtensions
         }
     }
 }
-#endif
