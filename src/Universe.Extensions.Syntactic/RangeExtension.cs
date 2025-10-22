@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace Universe.Extensions.Syntactic;
 
 public static class IntExtensions

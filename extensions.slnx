@@ -1,5 +1,6 @@
 <Solution>
   <Folder Name="/src/">
     <Project Path="src/Universe.Extensions.EntityFrameworkCore.Migration/Universe.Extensions.EntityFrameworkCore.Migration.csproj" />
+    <Project Path="src/Universe.Extensions.Syntactic/Universe.Extensions.Syntactic.csproj" />
   </Folder>
 </Solution>
