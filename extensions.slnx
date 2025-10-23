@@ -3,4 +3,7 @@
     <Project Path="src/Universe.Extensions.EntityFrameworkCore.Migration/Universe.Extensions.EntityFrameworkCore.Migration.csproj" />
     <Project Path="src/Universe.Extensions.Syntactic/Universe.Extensions.Syntactic.csproj" />
   </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Syntactic.UnitTests/Syntactic.UnitTests.csproj" />
+  </Folder>
 </Solution>
