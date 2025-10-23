@@ -1,0 +1,49 @@
+### YamlMime:ManagedReference
+items:
+- uid: Universe.Extensions.EntityFrameworkCore.Migration
+  commentId: N:Universe.Extensions.EntityFrameworkCore.Migration
+  id: Universe.Extensions.EntityFrameworkCore.Migration
+  children:
+  - Universe.Extensions.EntityFrameworkCore.Migration.IDbSeeder`1
+  - Universe.Extensions.EntityFrameworkCore.Migration.MigrateDbContextExtensions
+  langs:
+  - csharp
+  - vb
+  name: Universe.Extensions.EntityFrameworkCore.Migration
+  nameWithType: Universe.Extensions.EntityFrameworkCore.Migration
+  fullName: Universe.Extensions.EntityFrameworkCore.Migration
+  type: Namespace
+  assemblies:
+  - Universe.Extensions.EntityFrameworkCore.Migration
+references:
+- uid: Universe.Extensions.EntityFrameworkCore.Migration.IDbSeeder`1
+  commentId: T:Universe.Extensions.EntityFrameworkCore.Migration.IDbSeeder`1
+  href: Universe.Extensions.EntityFrameworkCore.Migration.IDbSeeder-1.html
+  name: IDbSeeder<TContext>
+  nameWithType: IDbSeeder<TContext>
+  fullName: Universe.Extensions.EntityFrameworkCore.Migration.IDbSeeder<TContext>
+  nameWithType.vb: IDbSeeder(Of TContext)
+  fullName.vb: Universe.Extensions.EntityFrameworkCore.Migration.IDbSeeder(Of TContext)
+  name.vb: IDbSeeder(Of TContext)
+  spec.csharp:
+  - uid: Universe.Extensions.EntityFrameworkCore.Migration.IDbSeeder`1
+    name: IDbSeeder
+    href: Universe.Extensions.EntityFrameworkCore.Migration.IDbSeeder-1.html
+  - name: <
+  - name: TContext
+  - name: '>'
+  spec.vb:
+  - uid: Universe.Extensions.EntityFrameworkCore.Migration.IDbSeeder`1
+    name: IDbSeeder
+    href: Universe.Extensions.EntityFrameworkCore.Migration.IDbSeeder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TContext
+  - name: )
+- uid: Universe.Extensions.EntityFrameworkCore.Migration.MigrateDbContextExtensions
+  commentId: T:Universe.Extensions.EntityFrameworkCore.Migration.MigrateDbContextExtensions
+  href: Universe.Extensions.EntityFrameworkCore.Migration.MigrateDbContextExtensions.html
+  name: MigrateDbContextExtensions
+  nameWithType: MigrateDbContextExtensions
+  fullName: Universe.Extensions.EntityFrameworkCore.Migration.MigrateDbContextExtensions

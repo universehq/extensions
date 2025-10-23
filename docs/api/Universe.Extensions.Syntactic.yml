@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Universe.Extensions.Syntactic
+  commentId: N:Universe.Extensions.Syntactic
+  id: Universe.Extensions.Syntactic
+  children:
+  - Universe.Extensions.Syntactic.IntExtensions
+  langs:
+  - csharp
+  - vb
+  name: Universe.Extensions.Syntactic
+  nameWithType: Universe.Extensions.Syntactic
+  fullName: Universe.Extensions.Syntactic
+  type: Namespace
+  assemblies:
+  - Universe.Extensions.Syntactic
+references:
+- uid: Universe.Extensions.Syntactic.IntExtensions
+  commentId: T:Universe.Extensions.Syntactic.IntExtensions
+  href: Universe.Extensions.Syntactic.IntExtensions.html
+  name: IntExtensions
+  nameWithType: IntExtensions
+  fullName: Universe.Extensions.Syntactic.IntExtensions

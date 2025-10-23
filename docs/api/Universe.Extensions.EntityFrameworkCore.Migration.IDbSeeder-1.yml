@@ -1,0 +1,170 @@
+### YamlMime:ManagedReference
+items:
+- uid: Universe.Extensions.EntityFrameworkCore.Migration.IDbSeeder`1
+  commentId: T:Universe.Extensions.EntityFrameworkCore.Migration.IDbSeeder`1
+  id: IDbSeeder`1
+  parent: Universe.Extensions.EntityFrameworkCore.Migration
+  children:
+  - Universe.Extensions.EntityFrameworkCore.Migration.IDbSeeder`1.SeedAsync(`0)
+  langs:
+  - csharp
+  - vb
+  name: IDbSeeder<TContext>
+  nameWithType: IDbSeeder<TContext>
+  fullName: Universe.Extensions.EntityFrameworkCore.Migration.IDbSeeder<TContext>
+  type: Interface
+  source:
+    remote:
+      path: src/Universe.Extensions.EntityFrameworkCore.Migration/IDbSeeder.cs
+      branch: dev
+      repo: git@github.com:universehq/extensions.git
+    id: IDbSeeder
+    path: ../src/Universe.Extensions.EntityFrameworkCore.Migration/IDbSeeder.cs
+    startLine: 6
+  assemblies:
+  - Universe.Extensions.EntityFrameworkCore.Migration
+  namespace: Universe.Extensions.EntityFrameworkCore.Migration
+  syntax:
+    content: 'public interface IDbSeeder<in TContext> where TContext : DbContext'
+    typeParameters:
+    - id: TContext
+    content.vb: Public Interface IDbSeeder(Of In TContext As DbContext)
+  nameWithType.vb: IDbSeeder(Of TContext)
+  fullName.vb: Universe.Extensions.EntityFrameworkCore.Migration.IDbSeeder(Of TContext)
+  name.vb: IDbSeeder(Of TContext)
+- uid: Universe.Extensions.EntityFrameworkCore.Migration.IDbSeeder`1.SeedAsync(`0)
+  commentId: M:Universe.Extensions.EntityFrameworkCore.Migration.IDbSeeder`1.SeedAsync(`0)
+  id: SeedAsync(`0)
+  parent: Universe.Extensions.EntityFrameworkCore.Migration.IDbSeeder`1
+  langs:
+  - csharp
+  - vb
+  name: SeedAsync(TContext)
+  nameWithType: IDbSeeder<TContext>.SeedAsync(TContext)
+  fullName: Universe.Extensions.EntityFrameworkCore.Migration.IDbSeeder<TContext>.SeedAsync(TContext)
+  type: Method
+  source:
+    remote:
+      path: src/Universe.Extensions.EntityFrameworkCore.Migration/IDbSeeder.cs
+      branch: dev
+      repo: git@github.com:universehq/extensions.git
+    id: SeedAsync
+    path: ../src/Universe.Extensions.EntityFrameworkCore.Migration/IDbSeeder.cs
+    startLine: 9
+  assemblies:
+  - Universe.Extensions.EntityFrameworkCore.Migration
+  namespace: Universe.Extensions.EntityFrameworkCore.Migration
+  syntax:
+    content: Task SeedAsync(TContext context)
+    parameters:
+    - id: context
+      type: '{TContext}'
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function SeedAsync(context As TContext) As Task
+  overload: Universe.Extensions.EntityFrameworkCore.Migration.IDbSeeder`1.SeedAsync*
+  nameWithType.vb: IDbSeeder(Of TContext).SeedAsync(TContext)
+  fullName.vb: Universe.Extensions.EntityFrameworkCore.Migration.IDbSeeder(Of TContext).SeedAsync(TContext)
+references:
+- uid: Universe.Extensions.EntityFrameworkCore.Migration
+  commentId: N:Universe.Extensions.EntityFrameworkCore.Migration
+  href: Universe.html
+  name: Universe.Extensions.EntityFrameworkCore.Migration
+  nameWithType: Universe.Extensions.EntityFrameworkCore.Migration
+  fullName: Universe.Extensions.EntityFrameworkCore.Migration
+  spec.csharp:
+  - uid: Universe
+    name: Universe
+    href: Universe.html
+  - name: .
+  - uid: Universe.Extensions
+    name: Extensions
+    href: Universe.Extensions.html
+  - name: .
+  - uid: Universe.Extensions.EntityFrameworkCore
+    name: EntityFrameworkCore
+    href: Universe.Extensions.EntityFrameworkCore.html
+  - name: .
+  - uid: Universe.Extensions.EntityFrameworkCore.Migration
+    name: Migration
+    href: Universe.Extensions.EntityFrameworkCore.Migration.html
+  spec.vb:
+  - uid: Universe
+    name: Universe
+    href: Universe.html
+  - name: .
+  - uid: Universe.Extensions
+    name: Extensions
+    href: Universe.Extensions.html
+  - name: .
+  - uid: Universe.Extensions.EntityFrameworkCore
+    name: EntityFrameworkCore
+    href: Universe.Extensions.EntityFrameworkCore.html
+  - name: .
+  - uid: Universe.Extensions.EntityFrameworkCore.Migration
+    name: Migration
+    href: Universe.Extensions.EntityFrameworkCore.Migration.html
+- uid: Universe.Extensions.EntityFrameworkCore.Migration.IDbSeeder`1.SeedAsync*
+  commentId: Overload:Universe.Extensions.EntityFrameworkCore.Migration.IDbSeeder`1.SeedAsync
+  href: Universe.Extensions.EntityFrameworkCore.Migration.IDbSeeder-1.html#Universe_Extensions_EntityFrameworkCore_Migration_IDbSeeder_1_SeedAsync__0_
+  name: SeedAsync
+  nameWithType: IDbSeeder<TContext>.SeedAsync
+  fullName: Universe.Extensions.EntityFrameworkCore.Migration.IDbSeeder<TContext>.SeedAsync
+  nameWithType.vb: IDbSeeder(Of TContext).SeedAsync
+  fullName.vb: Universe.Extensions.EntityFrameworkCore.Migration.IDbSeeder(Of TContext).SeedAsync
+- uid: '{TContext}'
+  commentId: '!:TContext'
+  definition: TContext
+  name: TContext
+  nameWithType: TContext
+  fullName: TContext
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: TContext
+  commentId: '!:TContext'
+  name: TContext
+  nameWithType: TContext
+  fullName: TContext
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

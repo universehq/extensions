@@ -1,0 +1,12 @@
+{
+  "Universe.Extensions.EntityFrameworkCore.Migration": "Universe.Extensions.EntityFrameworkCore.Migration.yml",
+  "Universe.Extensions.EntityFrameworkCore.Migration.IDbSeeder`1": "Universe.Extensions.EntityFrameworkCore.Migration.IDbSeeder-1.yml",
+  "Universe.Extensions.EntityFrameworkCore.Migration.IDbSeeder`1.SeedAsync(`0)": "Universe.Extensions.EntityFrameworkCore.Migration.IDbSeeder-1.yml",
+  "Universe.Extensions.EntityFrameworkCore.Migration.MigrateDbContextExtensions": "Universe.Extensions.EntityFrameworkCore.Migration.MigrateDbContextExtensions.yml",
+  "Universe.Extensions.EntityFrameworkCore.Migration.MigrateDbContextExtensions.AddMigration``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)": "Universe.Extensions.EntityFrameworkCore.Migration.MigrateDbContextExtensions.yml",
+  "Universe.Extensions.EntityFrameworkCore.Migration.MigrateDbContextExtensions.AddMigration``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{``0,System.IServiceProvider,System.Threading.Tasks.Task})": "Universe.Extensions.EntityFrameworkCore.Migration.MigrateDbContextExtensions.yml",
+  "Universe.Extensions.EntityFrameworkCore.Migration.MigrateDbContextExtensions.AddMigration``2(Microsoft.Extensions.DependencyInjection.IServiceCollection)": "Universe.Extensions.EntityFrameworkCore.Migration.MigrateDbContextExtensions.yml",
+  "Universe.Extensions.Syntactic": "Universe.Extensions.Syntactic.yml",
+  "Universe.Extensions.Syntactic.IntExtensions": "Universe.Extensions.Syntactic.IntExtensions.yml",
+  "Universe.Extensions.Syntactic.IntExtensions.To(System.Int32,System.Int32)": "Universe.Extensions.Syntactic.IntExtensions.yml"
+}

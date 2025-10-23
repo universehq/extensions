@@ -1,0 +1,20 @@
+### YamlMime:TableOfContent
+items:
+- uid: Universe.Extensions.EntityFrameworkCore.Migration
+  name: Universe.Extensions.EntityFrameworkCore.Migration
+  type: Namespace
+  items:
+  - uid: Universe.Extensions.EntityFrameworkCore.Migration.IDbSeeder`1
+    name: IDbSeeder<TContext>
+    type: Interface
+  - uid: Universe.Extensions.EntityFrameworkCore.Migration.MigrateDbContextExtensions
+    name: MigrateDbContextExtensions
+    type: Class
+- uid: Universe.Extensions.Syntactic
+  name: Universe.Extensions.Syntactic
+  type: Namespace
+  items:
+  - uid: Universe.Extensions.Syntactic.IntExtensions
+    name: IntExtensions
+    type: Class
+memberLayout: SamePage
