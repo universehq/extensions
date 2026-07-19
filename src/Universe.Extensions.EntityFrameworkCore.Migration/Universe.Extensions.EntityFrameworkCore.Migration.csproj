@@ -1,31 +1,33 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageId>Universe.Extensions.EntityFrameworkCore.Migration</PackageId>
-    <IsPackable>True</IsPackable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
-    <ItemGroup>
-        <FrameworkReference Include="Microsoft.AspNetCore.App" />
-    </ItemGroup>
+  <PropertyGroup>
+    <VersionPrefix>0.1.0</VersionPrefix>
+    <PackageId>Universe.Extensions.EntityFrameworkCore.Migration</PackageId>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
 
-    <ItemGroup Condition="'$(TargetFramework)' == 'net8.0'">
-      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0" />
-    </ItemGroup>
-    
-    <ItemGroup Condition="'$(TargetFramework)' == 'net9.0'">
-      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="9.0" />
-    </ItemGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
 
-    <ItemGroup>
-        <None Include="./README.md" Pack="true" PackagePath="\" />
-    </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net8.0'">
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0" />
+  </ItemGroup>
 
+  <ItemGroup Condition="'$(TargetFramework)' == 'net9.0'">
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="./README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
 </Project>

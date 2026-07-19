@@ -2,6 +2,9 @@
   <PropertyGroup>
     <Authors>Ryan Martin</Authors>
     <Nullable>enable</Nullable>
-    <ProjectName>Universe.Extensions</ProjectName>
+    <LangVersion>14</LangVersion>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/universehq/extensions</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/universehq/extensions</RepositoryUrl>
   </PropertyGroup>
 </Project>
